@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        #contaner{
+            display: grid;
+            grid-template-columns: repeat(4,280px);
+            grid-gap: 80px;
+        }
+        #flex{
+            font-size: 20px;
+            font-weight: bold;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product page</h1>
+    <div id="contaner"></div>
+    
+</body>
+</html>
+<script>
+    var productData =[
+        {
+           image_url: "https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Makeup-Reval-1_f2363b26-d6b5-4e83-83fb-29a83f84f5e0_2048x.png?v=1641199973",
+           name:"SUGAR Wonder Woman 24 HR Lip Lacquer of your choice!",
+           price: 599,
+        },
+        {
+           image_url: "https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Skincare-Reveal-1_aa1f2cbb-6ce8-4889-b3a6-a266f8fdcfd3_2048x.png?v=1641356659",
+           name:"Coco Soul Hair and Scalp Cleanser/Shampoo",
+           price: 599,
+        },
+        {
+           image_url: "https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Skincare-Reveal-2_2422e34b-29b9-4768-83a8-e8e6099efc9e_2048x.png?v=1641542044",
+           name:"Palmer's Hair Style Hold",
+           price: 599,
+        },
+        {
+           image_url: "https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Skincare-Reveal-3_6c48dfa1-26f9-4219-9c8a-471b6d1522bf_2048x.png?v=1641707903",
+           name:"Baiser India Nourishing Lip Oil",
+           price: 599,
+        },
+        
+    ];
+ productData.map(function(data){
+     var div=document.createElement("div");
+
+     var image=document.createElement("img");
+     image.setAttribute("src",data.image_url);
+
+     
+
+     var name = document.createElement("p");
+     name.textContent=data.name;
+     name.setAttribute("id","flex")
+     
+
+     div.append(image,name,);
+
+     document.querySelector("#contaner").append(div)
+
+     })
+
+ 
+</script>

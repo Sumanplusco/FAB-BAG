@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #intro{
+            
+            background-color: rgb(1, 7, 19);
+            justify-content: space-between;
+            height: 30px;
+            color: white;
+            padding:.2px 0 15px 0;
+          
+            
+     
+        }
+        #intro > h4{
+            text-align: center;
+        }
+        #nava{
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            height: 60px;
+            padding:30px 0 0 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        
+        }
+        .fast{
+            color:white;
+            width: 70%;
+            display:flex;
+        }
+        .last{
+            color:white;
+            display: flex;
+            width:30%;
+            justify-content: space-around;
+        }
+        a{
+            color:rgb(241, 203, 76);
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #new1{
+            border:1px solid blue;
+            height:450px;
+            width: 100%;
+            margin-top: 20px;
+           
+            background-size: cover;
+            margin-bottom: 40px;
+        }
+        #new1> img{
+            height: 450px;
+            width: 100%;
+        }
+        .bagbox{
+            margin-bottom: 40px;
+        }
+        #productbox{
+            display: grid;
+            grid-template-columns: repeat(4,290px);
+            
+            justify-content: space-around;
+           
+        }
+        .imgclass > div{
+           
+            
+            height: 300px;
+            width: 300px;
+            
+           
+        }
+        .imgclass >div> a>img{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+
+        }
+        .fast>img{
+            height:50px;
+            margin-left: 350px;
+        }
+        
+        .subbox1{
+            border:1px solid black;
+            height:100px;
+            width:350px;
+            
+            
+
+        }
+        .subbox2{
+            border:1px solid black;
+            height:300px;
+            width:350px;
+
+        }
+        .subbox3{
+            border:1px solid black;
+            height:200px;
+            width:350px;
+
+        }
+        .smallpic{
+            
+            height:100px;
+            width:350px;
+            padding-top: 10px;
+        }
+        #subunder{
+            display: grid;
+            grid-template-columns: repeat(3,350px);
+            grid-gap:20px;
+            padding-left: 100px;
+        }
+        .preimg > div{
+          
+            border-radius: 10px;
+            height: 150px;
+            width: 280px;
+            
+            
+           
+        }
+        .preimg >div>img{
+            height: 150px;
+            width: 280px;
+           
+
+        }
+        #testimonials{
+           
+            height:500px;
+            width:100%;
+            background-color: rgb(244,233,212);
+        }
+        #subscriptionbox{
+            margin-bottom: 40px;
+            margin-top: 30px;
+        }
+        #corenrdiv{
+           
+            height: 200px;
+            width: 100%;
+            display: flex
+        }
+        .cornerpic >img{
+            height: 200px;
+            width: 190px;
+
+        }
+        #corner{
+            margin-bottom: 40px;
+
+        }
+        #brand{
+         
+            height: 150px;
+            width: 100%;
+            display: flex;
+            margin-bottom: 40px;
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(5, 200px);
+            justify-content: space-around;
+            padding-top: 60px;
+            background-color: rgb(228,184,95);
+            border-bottom: 3px thistle;
+        }
+        }
+        #lastpart{
+            border:1px solid red;
+            height: 600px;
+            width: 100%;
+            
+            margin-bottom: 40px;
+            
+        }
+        #informationbox{
+            
+            height: 450px;
+            width: 100%;
+            display: flex;
+           
+            margin-bottom: 20px;
+
+        }
+        #socialmedia{
+            
+            height: 100px;
+            width: 100%;
+            
+        }
+        .maintext{
+            text-decoration: underline;
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        .subboxdata{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+
+        }
+        .addcart{
+            width:300px;
+            height: 40px;
+            margin: 34px 0px 0px 25px;
+            border-radius: 10px;
+            background-color:rgb(241, 203, 76) ;
+           border-color: white;
+           color: white;
+           font-family:'Times New Roman', Times, serif;
+           font-size: 18px;
+           
+          
+        }
+        .subcolor{
+            background-color:rgb(241, 203, 76) ;
+        }
+        .maintext ~ div{
+            padding-top: 100px;
+            color: rgb(15, 3, 1);
+        }
+    
+        .brand1{
+            border:2px solid black;
+            height: 90px;
+            width: 100px;
+            border-radius: 20px;
+        }
+        .brand2{
+            border:2px solid black;
+            height: 50px;
+            width: 210px;
+            border-radius: 20px;
+        }
+        .brand1 img{
+            height: 90px;
+            width: 100px;
+            border-radius: 20px;
+        }
+        .brand2 img{
+            height: 50px;
+            width: 210px;
+            border-radius: 20px;
+            background-color: white;
+
+        }
+        #informationbox > div{
+            
+            width: 33%;
+            height: 100%;
+           
+        }
+        .mailbox{
+         
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            height: 40px;
+            width: 250px;
+            border:0px;
+            margin-left: 20px;
+        }
+        .mailbutton{
+            height: 40px;
+            width: 100px;
+            background-color: rgb(241, 203, 76) ;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border:0px;
+            border-radius: 10px;
+            
+        }
+        #socialmedia>div> button{
+            
+         margin-left: 5px;
+         border:0px;
+         
+         border-radius: 50%;
+         
+        }
+        #socialmedia >div{
+            padding-left: 550px;
+        }
+        .socialimg>img{
+            height:30px;
+         width: 30px;
+         border-radius: 50%;
+         
+
+        }
+
+        
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <div id="intro">
+        <h4>AVAILABLE NOW - THE BEAUTY RESOLUTION JANUARY FAB BAG! </h4>
+    </div>
+    <div id="nava">
+        <div class="fast">
+            <a href="subscribe.html">SUBSCRIBE NOW</a>
+            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289"/>
+        </div>
+        
+        <div class="last">
+            <div>Home</div>
+            <div>
+                <a href="about.html" >About</a></div>
+            <div id="product" style="color: black;">Product</div>
+            <div onclick="window.location.href='login.html'" style="color: black;">Login </div>
+            <div onclick="window.location.href='signup.html'" style="color: black;">Signup </div>
+            <div onclick="window.location.href='signup.html'" style="color: black;">cart </div>
+            
+        </div>
+    </div>
+    <div id="new1">
+        <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-Skincare-Reveal--3.png?v=1641707966"/>
+        
+    </div>
+    <div class="bagbox">
+        <div class="maintext" >
+            <h1 >WHAT'S IN THE BAG</h1>
+        </div>
+        <div id="productbox">
+            <div class="imgclass">
+                <div>
+                   <a href="subscribe.html">
+                    <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Makeup-Reval-1_f2363b26-d6b5-4e83-83fb-29a83f84f5e0_2048x.png?v=1641199973"/>
+                   </a>
+                
+                </div>
+                <div style="height: 100px;">
+                    <h3>SUGAR Wonder Woman 24 HR Lip Lacquer of your choice!*</h3>
+                </div>
+            </div>
+            <div class="imgclass">
+                <div>
+                    <a href="subscribe.html">
+                        <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Skincare-Reveal-1_aa1f2cbb-6ce8-4889-b3a6-a266f8fdcfd3_2048x.png?v=1641356659"/>
+                    </a>
+                    
+                
+                </div>
+                <div style="height: 100px;">
+                    <h3>Coco Soul Hair and Scalp Cleanser/Shampoo</h3>
+                </div>
+            </div>
+            <div class="imgclass">
+                <div>
+                    <a href="subscribe.html"> 
+                        <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Skincare-Reveal-2_2422e34b-29b9-4768-83a8-e8e6099efc9e_2048x.png?v=1641542044"/>
+                    </a>
+                   
+                
+                </div>
+                <div style="height: 100px;">
+                    <h3>Palmer's Hair Style Hold</h3>
+                </div>
+            </div>
+            <div class="imgclass">
+                <div>
+                    <a href="subscribe.html"> 
+                        <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/What_s-In-The-Bag--Skincare-Reveal-3_6c48dfa1-26f9-4219-9c8a-471b6d1522bf_2048x.png?v=1641707903"/>
+                    </a>
+                    
+                
+                </div>
+                <div style="height: 100px;">
+                    <h3>Baiser India Nourishing Lip Oil</h3>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+    <div id="subscriptionbox">
+        <div>
+            <h1 class="maintext">SUBSCRIPTION</h1>
+        </div>
+        <div id="subunder">
+            <div class="subbox">
+                <div class="subbox1">
+                    <h3 class="subboxdata">1 MONTH</h3>
+                    <h4 class="subboxdata">SUBSCRIPTION</h4>
+                </div>
+                <div class="subbox1">
+                    <h3 class="subboxdata">Rs. 599.00</h3>
+                    <h4 class="subboxdata">/ per month</h4>
+                </div>
+                <div class="subbox2">
+                    
+                    <h4 class="subboxdata"style="color:rgb(241, 203, 76)">ONE TIME PAYMENT</h4>
+                    <h3 class="subboxdata">Rs. 599.00</h3>
+                </div>
+                <div class="subbox1 subcolor " >
+                    <button class="addcart">ADD TO CART</button>
+                </div>
+            </div>
+            <div>
+                <div class="subbox">
+                    <div class="subbox1">
+                        <h3 class="subboxdata">3 MONTH</h3>
+                        <h4 class="subboxdata">SUBSCRIPTION</h4>
+                    </div>
+                    <div class="subbox1">
+                        <h3 class="subboxdata">Rs. 533.00</h3>
+                        <h4 class="subboxdata">/ per month</h4>
+                    </div>
+                    <div class="subbox2">
+                        
+                        <h4 class="subboxdata"style="color:rgb(241, 203, 76)">ONE TIME PAYMENT (11% OFF)</h4>
+                        <h3 class="subboxdata">Rs. 1,599.00 <span style="text-decoration:line-through;"> Rs. 1,797</span> </h3>
+                    </div>
+                    <div class="subbox1 subcolor">
+                        <button class="addcart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="subbox">
+                    <div class="subbox1">
+                        <h3 class="subboxdata">6 MONTH/h3>
+                        <h4 class="subboxdata">SUBSCRIPTION</h4>
+                    </div>
+                    <div class="subbox1">
+                        <h3 class="subboxdata">Rs. 483.00</h3>
+                        <h4 class="subboxdata">/ per month/h4>
+                    </div>
+                    <div class="subbox1">
+                        
+                        <h4 class="subboxdata"style="color:rgb(241, 203, 76)">ONE TIME PAYMENT (19% OFF)</h4>
+                        <h3 class="subboxdata">Rs. 2,899.00 <span style="text-decoration:line-through;"> Rs. 3,594</span> </h3>
+                    </div>
+                    <div class="subbox3">
+                        <div class="smallpic">
+                            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/GWP_Creative_1_260f48bb-6f40-4ff5-b724-2282930be6da_480x480.png?v=1619068709"/>
+                        </div>
+                       
+                        <h3 class="subboxdata">SUGAR Contour De Force Mini Highlighter - 02 Gold Glory worth 399/-!*</h3>
+                    </div>
+                    <div class="subbox1 subcolor">
+                        <button class="addcart ">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bagbox">
+        <div >
+            <h1 class="maintext">PREVIOUS BAGS</h1>
+        </div>
+        <div id="productbox">
+            <div class="preimg">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-3.gif?v=1638191014"/>
+                
+                </div>
+                <div style="height: 100px;">
+                    <h4>Dec'21 The X-Must Haves Fab Bag</h4>
+                    <h3 style="color: rgb(175, 157, 175);">from Rs.500.00</h3>
+                </div>
+            </div>
+            <div  class="preimg">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPageBanner--Skincare-Reveal-4_1.gif?v=1636696484"/>
+                
+                </div>
+                <div style="height: 100px;">
+                    <h4>Nov'21 The Diva-Li-Cious Fab Bag</h4>
+                    <h3 style="color: rgb(175, 157, 175);"><span style="text-decoration: line-through;">Rs1,797.00  </span>  from Rs.500.00</h3>
+                </div>
+            </div>
+            <div  class="preimg">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPageBanner--Skincare-Reveal-4.png?v=1633952538"/>
+                
+                </div>
+                <div style="height: 100px;">
+                    <h4>Oct'21 The Diva-Li-Cious Fab Bag</h4>
+                    <h3 style="color: rgb(175, 157, 175);"><span style="text-decoration: line-through;">Rs1,797.00  </span>  from Rs.500.00</h3>
+                </div>
+            </div>
+            <div  class="preimg">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPageBanner-Skincare-Reveal-4-5_2faddde5-aa4f-4393-a694-5596034b6fed.png?v=1631337975"/>
+                
+                </div>
+                <div style="height: 100px;">
+                    <h4>Sep'21 The Diva-Li-Cious Fab Bag</h4>
+                    <h3 style="color: rgb(175, 157, 175);"><span style="text-decoration: line-through;">Rs1,797.00  </span>  from Rs.500.00</h3>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+    <div id="testimonials">
+        <div class="maintext" >
+            <h1 >TESTIMONIALS</h1>
+        </div>
+        <div>
+            <h3 style="font-family:'Courier New', Courier, monospace">"Tom loved his robot party bags and so did all of his friends. We gave them out 15 minutes early as we just knew they'd want to play being robots wearing their football bags. Thanks."</h3>
+            <h2  style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; text-align: center;">-poonam</h2>
+        </div>
+    </div>
+    <div id="corner">
+        <div>
+            <div class="maintext" >
+                <h2 >#TRENDINGNOW AT THE GOSSIP CORNER</h2>
+            </div>
+           
+        </div>
+        <div id="corenrdiv">
+            <div class="cornerpic">
+                <img src="https://scontent.cdninstagram.com/v/t51.29350-15/272295376_529954148097868_8977760426402718598_n.webp.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=cYbW2HgXSVUAX-NnVQo&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_QNXMbcD5V6c2xhIXRSmnLG3nLwFLyBirng2J5IPH-wA&oe=61EF250D"/>
+            </div>
+            <div class="cornerpic">
+                <img src="https://scontent.cdninstagram.com/v/t51.29350-15/272251233_421020516421610_3306085930991475642_n.webp.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=C5SqjLSEGHYAX8EmcLI&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8NQy6xj7oDNmjGTlr9tq2OiFFYpj8XtmsCiyPtCq-crQ&oe=61EFBD50"/>
+            </div>
+            <div class="cornerpic">
+                <img src="https://scontent.cdninstagram.com/v/t51.29350-15/272109373_2988455138073557_4325830492242000673_n.webp.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=_V669XGRiEYAX_dGqZi&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT88_UXKp6KUKA--psmQi6zQWi5goPXo1-Q90smRmqQnkA&oe=61EF39DC"/>
+            </div>
+            <div class="cornerpic">
+                <img src="https://scontent.cdninstagram.com/v/t51.29350-15/272067251_965150874142103_5163232391737633822_n.webp.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=y2YIe0vfuzAAX_6qbqT&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-fCh67XZvpu78GMX5WW__NZrkHjo8zGytKQ4PXqbklmw&oe=61EF9F98"/>
+            </div>
+            <div class="cornerpic">
+                <img src="https://scontent.cdninstagram.com/v/t51.29350-15/271956384_905411160169745_8282718073852644752_n.webp.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=uJwkWRMDS7gAX-7AC36&_nc_oc=AQma5nYJcICM2Zkk7b2GbJCtV4IQaQY0Ju3VWegpAuxYzV5yAk4lxAf1HtKbfo2iu04&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-wFHbzx4cDLcdEVMeOHLn_Rfu6V0l2ZXU4IJi4YDSCAg&oe=61EF4103"/>
+            </div>
+            <div class="cornerpic">
+                <img src="https://scontent.cdninstagram.com/v/t51.2885-15/272006066_4666103980111618_873631764728098827_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=D-z4p7P3UwQAX94nbGS&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9jRXqfW4cycwW4KK0hItovAKn7ZQLCQet5pedqVqB9eA&oe=61EEF265"/>
+            </div>
+            <div class="cornerpic">
+                <img src="https://scontent.cdninstagram.com/v/t51.2885-15/271992638_1001208520818526_896469008677338792_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=OsOUUT2Ns6oAX8lDsKZ&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9HpybpuxUTmj4o4EoUw_DIqTSQumb5vM1x8qBO9g09Bw&oe=61EFC8A5"/>
+            </div>
+           
+        </div>
+    </div>
+    <div id="brand">
+        <div class="brand1">
+            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/sugar_1_160x160.jpg?v=1548837170"/>
+        </div>
+        <div class="brand2">
+            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/Plum_Logo_For_Olive_and_Macadamia_Hair_Spa_Kit_160x160.png?v=1625063052"/>
+        </div>
+        <div class="brand2">
+            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/Tru_hair_logo_160x160.png?v=1625063080"/>
+        </div>
+        <div class="brand1">
+            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/WOC_Beauty_Logo_160x160.jpg?v=1602225835"/>
+        </div>
+        <div class="brand1">
+            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/Baiser_India_Logo_160x160.jpg?v=1625063066"/>
+        </div>
+    </div>
+    <div id="lastpart">
+        <div id="informationbox">
+            <div>
+                <h3 style="padding-left: 80px;">INFORMATION</h3>
+                <h3 style="color:rgb(155, 128, 151); padding-left: 80px;"><span>About Us</span><br/><br/>
+                   <span> Associated Brands</span><br/><br/>
+                    <span>FAQ</span><br/><br/>
+                    <span>Collaborate with Fab Bag</span><br/><br/>
+                    <span>Contact Us</span><br/><br/>
+                    <span>Returns & Refunds</span><br/><br/>
+                   <span> Terms & Conditions</span><br/><br/>
+                   <span>Privacy Policy</span> </h3>
+            </div>
+            <div>
+                <h3 style="padding-left: 50px;">CUSTOMER CARE</h3>
+                    <h3  style="color:rgb(155, 128, 151); padding-left: 50px;"><span>Call : 022-6805-6010 </span><br/>
+                        <span>(Monday to Friday : 9 AM - 7 PM).</span><br/><br/>
+                       <span> Mail : crew@fabbag.com </span></h3>
+            </div>
+            <div>
+                <h3 style="padding-left: 50px;">NEWSLETTER</h3>
+                <h5 style="color:rgb(155, 128, 151); padding-left: 50px;">Signup for the latest offers, updates and news</h5>
+                <input class="mailbox" type="text" placeholder="Your Mail Address"/>
+                <button class="mailbutton" onclick="checkAge()">SUBSCRIBE</button>
+                <h5 style="color:rgb(155, 128, 151); padding-left: 50px;">Don’t worry we don’t spam</h5>
+            </div>
+        </div>
+        <div id="socialmedia">
+           <div>
+            <button class="socialimg">
+                <img src="https://th.bing.com/th/id/OIP.VG5lc6hlf_si1820i7xsTQHaHa?w=180&h=180&c=7&r=0&o=5&pid=1.7"
+            </button>
+            <button class="socialimg">
+                <img src="https://th.bing.com/th/id/OIP.Vr8DfHIHQWd3rUGnO20uOgHaHa?w=181&h=182&c=7&r=0&o=5&pid=1.7"
+            </button>
+            <button class="socialimg">
+                <img src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black-circle.png"
+            </button>
+            <button class="socialimg">
+                <img src="https://th.bing.com/th/id/OIP.y01TVrOCzHygDavgEC9C0AHaHw?w=210&h=219&c=7&r=0&o=5&pid=1.7"
+            </button>
+           </div> 
+            <h3 style="text-align:center;">Copyright © 2022 Suman_Plus_code All rights reserved.</h3>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
+<script>
+    document.getElementById("product").addEventListener("click", function(){
+        window.location.href="product.html"
+    });
+
+</script>
